@@ -5,10 +5,7 @@ version 0.12.0.
 
 ## Development
 
-in `app/scripts/app.js`
-set `requiredBase` as `false`
-
-and in `app/index.html`
+in `app/index.html`
 comment the `<base>` tag under `<head>` tag
 
 `grunt serve` for preview.
@@ -19,10 +16,7 @@ Running `grunt test` will run the unit tests with karma.
 
 ## Production
 
-in `app/scripts/app.js`
-set `requiredBase` as `true`
-
-and in `app/index.html`
+in `app/index.html`
 uncomment the `<base>` tag under `<head>` tag
 
-Run `grunt` for building 
+Run `grunt build` for building
