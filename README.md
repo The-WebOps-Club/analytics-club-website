@@ -5,8 +5,9 @@ version 0.12.0.
 
 ## Setup
 
-`node`, `bower` and `mongodb` should be installed
-run `bower install && npm install` to download all dependencies
+`node`, `bower` and `mongodb` should be installed.
+
+Run `bower install && npm install` to download all dependencies
 
 ## Development
 
