@@ -1,1 +1,16 @@
-<p>This is the contact view.</p>
+<div class="row" id="convenors">
+	<h2>Convenors</h2>
+	<div class="col-md-6" ng-repeat="member in contact.convenors">
+		<p>{{ member.name }}</p>
+		<p>{{ member.email }}</p>
+		<p>{{ member.phone }}</p>
+	</div>
+</div>
+<div class="row" id="coordinators">
+	<h2>Coordinators</h2>
+	<div class="col-md-6" ng-repeat="member in contact.coordinators">
+		<p>{{ member.name }}</p>
+		<p>{{ member.email }}</p>
+		<p>{{ member.phone }}</p>
+	</div>
+</div>
