@@ -3,13 +3,13 @@
 		<h2>Convenors</h2>
 		<div class="col-md-6 col-xs-12" ng-repeat="member in contact.convenors">
 			<p class="name">{{ member.name | uppercase }}</p>
-			<p><a href="mailto:{{ member.email }}"></a>{{ member.email }}</p>
+			<p><a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
 			<p class="phone">{{ member.phone }}</p>
 		</div>
 		<h2>Coordinators</h2>
 		<div class="col-md-6 col-xs-12" ng-repeat="member in contact.coordinators">
 			<p class="name">{{ member.name | uppercase }}</p>
-			<p><a href="mailto:{{ member.email }}"></a>{{ member.email }}</p>
+			<p><a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
 			<p class="phone">{{ member.phone }}</p>
 		</div>
 	</div>
