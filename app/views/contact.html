@@ -2,15 +2,21 @@
 	<div class="col-md-8 col-md-offset-2 col-xs-12">
 		<h2>Convenors</h2>
 		<div class="col-md-6 col-xs-12" ng-repeat="member in contact.convenors">
-			<p class="name">{{ member.name | uppercase }}</p>
-			<p><a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
-			<p class="phone">{{ member.phone }}</p>
+			<section class="col-md-12 well">
+				<p class="name">{{ member.name | uppercase }}</p>
+				<a href="mailto:{{ member.email }}">{{ member.email }}</a>
+				<p class="phone">{{ member.phone }}</p>
+			</section>
+			<!-- <img src="images/CFI_logo" class="col-md-4 img-responsive"> -->
 		</div>
 		<h2>Coordinators</h2>
 		<div class="col-md-6 col-xs-12" ng-repeat="member in contact.coordinators">
-			<p class="name">{{ member.name | uppercase }}</p>
-			<p><a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
-			<p class="phone">{{ member.phone }}</p>
+			<section class="col-md-8">
+				<p class="name">{{ member.name | uppercase }}</p>
+				<a href="mailto:{{ member.email }}">{{ member.email }}</a>
+				<p class="phone">{{ member.phone }}</p>
+			</section>
+			<img src="images/CFI_logo" class="col-md-4 img-responsive">
 		</div>
 	</div>
 </div>
