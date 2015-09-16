@@ -1,14 +1,22 @@
-#contact-view {
+/*div.col-md-6.col-xs-12 {
+	margin-bottom: 10px;
+}*/
+.name-card {
+	margin-bottom: 1em;
 	p {
 		margin-bottom: 0px;
 	}
 	a {
 		font-size: 0.9em;
+		text-decoration: none;
 	}
-	div.col-md-6.col-xs-12 {
-		margin-bottom: 10px;
-	}
-	.name-card {
-		/*margin-right: 10px;*/
-	}
+}
+.designation {
+	background-color: $theme_yellow;
+	text-transform: uppercase;
+	padding: 0.8em 0.5em 0.5em 0.5em;
+}
+.heads.row,
+.coords.row {
+	margin-bottom: 2em;
 }
