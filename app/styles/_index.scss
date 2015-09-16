@@ -1,6 +1,29 @@
-#index-view {
+p {
+	text-align: justify;
+	font-size: 1.2em;
+}
+#club-title {
+	text-transform: uppercase;
+	font-size: 6em;
+	/*font-weight: bold;*/
+	letter-spacing: 0.05em;
+	font-family: "Junction-Bold";
+}
+#text-thin {
+	font-size: 2em;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+#about {
+	background-color: $theme_yellow;
+	padding: 3em 4em;
+	margin-top: 7.5%;
+	position: absolute;
+	left: 0;
+	width: 100%;
 	p {
-		text-align: justify;
-		font-size: 1.2em;
+		border-left: 0.5em solid black;
+		padding-left: 1em;
+		padding-right: 10em;
 	}
 }

@@ -1,87 +1,133 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$theme_yellow: #f0e848;
+
+/*fonts*/
+@font-face {
+	font-family: Bebasnueu;
+	src: url(../fonts/BEBASNEUE.OTF);
+}
+@font-face {
+	font-family: Junction-Bold;
+	/*font-weight: bold;*/
+	src: url(../fonts/Junction-bold.otf);
+}
+@font-face {
+	font-family: Junction;
+	font-weight: normal;
+	src: url(../fonts/Junction-regular.otf);
+}
+/*@import "../fonts/Junction-bold.otf";*/
+/*@import "../fonts/Junction-regular.otf";*/
+
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
-@import "_projects.scss";
-@import "_contact.scss";
+
 @import "_index.scss";
+@import "_projects.scss";
+@import "_resources.scss";
+@import "_contact.scss";
+
 
 .browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
 }
 
 body {
-  padding: 0;
+	padding: 0;
+	color: black;
+	font-family: "Junction";
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 /* Custom page header */
 .header {
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
+	/* Make the masthead heading the same height as the navigation */
+	h3 {
+		margin-top: 0;
+		margin-bottom: 0;
+		line-height: 40px;
+		padding-bottom: 19px;
+	}
 }
 
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+	padding-top: 19px;
+	color: #777;
+	border-top: 1px solid #e5e5e5;
 }
 
 .container-narrow > hr {
-  margin: 30px 0;
+	margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
 
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
+	.btn {
+		font-size: 21px;
+		padding: 14px 24px;
+	}
 }
 
 /* Supporting marketing content */
 .marketing {
-  margin: 40px 0;
+	margin: 40px 0;
 
-  p + h4 {
-    margin-top: 28px;
-  }
+	p + h4 {
+		margin-top: 28px;
+	}
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+	/* Remove the padding we set earlier */
+	.header,
+	.marketing,
+	.footer {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	/* Space out the masthead */
+	.header {
+		margin-bottom: 30px;
+	}
+	/* Remove the bottom border on the jumbotron for visual effect */
+	.jumbotron {
+		border-bottom: 0;
+	}
+}
+
+.navbar {
+	min-height: 40px;
+}
+.navbar,
+#js-navbar-collapse {
+	background-color: $theme_yellow;
+	border-color: $theme_yellow;
+}
+
+#js-navbar-collapse a {
+	text-transform: uppercase;
+	color: black;
+	font-family: "Bebasnueu";
+	letter-spacing: 0.1em;
+	font-size: 1.3em;
+	&:hover {
+		color: lighten(black, 25%);
+	}
+	padding: 10px;
 }

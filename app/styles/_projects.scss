@@ -1,7 +1,17 @@
-#projects-view {
-	div.project {
-		p {
-			text-align: justify;
-		}
+div.project {
+	.title {
+		background-color: $theme_yellow;
+		text-transform: uppercase;
+		padding: 0.8em 0.5em 0.5em 0.5em;
+	}
+	.members {
+		margin: 1em;
+		font-weight: bold;
+		letter-spacing: 0.05em;
+	}
+	.description {
+		text-align: justify;
+		padding: 0em 1em;
+		letter-spacing: 0.05em;
 	}
 }
