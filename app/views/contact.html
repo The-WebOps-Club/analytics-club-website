@@ -1,6 +1,6 @@
 <div class="col-md-8 col-md-offset-2 col-xs-12">
 	<div class="row heads">
-		<h4 class="designation">Coordinators</h4>
+		<h4 class="designation">Convenors</h4>
 		<div class="col-md-6 col-xs-12 name-card" ng-repeat="member in contact.convenors">
 			<p class="name">{{ member.name | uppercase }}</p>
 			<a href="mailto:{{ member.email }}">{{ member.email }}</a>
@@ -9,7 +9,7 @@
 		</div>		
 	</div>
 	<div class="row coords">
-		<h4 class="designation">Convenors</h4>
+		<h4 class="designation">Coordinators</h4>
 		<div class="col-md-6 col-xs-12 name-card" ng-repeat="member in contact.coordinators">
 			<p class="name">{{ member.name | uppercase }}</p>
 			<a href="mailto:{{ member.email }}">{{ member.email }}</a>
