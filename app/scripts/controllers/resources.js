@@ -9,9 +9,23 @@
  */
 angular.module('analyticsApp')
   .controller('ResourcesCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+		this.titles = [{
+			name: "Introduction to Analytics",
+			slug: "intro",
+			file: "docs/intro.pdf"
+		}, {
+			name: "Introduction to R",
+			slug: "intro-R",
+			file: "docs/intro-R.pdf"
+		}, {
+			name: "Regression",
+			slug: "regression",
+			file: "docs/regression.pdf"
+		}, {
+			name: "Classfication",
+			slug: "classfication",
+			file: "docs/classfication.pdf"
+		}
+		];
+		this.showMe = "intro";
   });
